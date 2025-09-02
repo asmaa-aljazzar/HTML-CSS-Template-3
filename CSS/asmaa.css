@@ -1192,7 +1192,7 @@ img {
 .testimonials .box img {
 	position: absolute;
 	right: -10px;
-	top: -50px;
+	top: -20px;
 	width: 100px;
 	border-radius: 50%;
 	border: 10px solid var(--section-bg)
@@ -1221,3 +1221,35 @@ img {
 }
 
 /* End Testimonials */
+
+/* Start Team */
+.team {
+	padding-top: var(--main-padding-top);
+	padding-bottom: var(--main-padding-bottom);
+	position: relative;
+}
+
+.team .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 30px;
+}
+
+.team .box {
+	position: relative;
+}
+.team .box::before {
+	content: "";
+	background-color: #f3f3f3;
+	position: absolute;
+	border-radius: 10px;
+	z-index: -2;
+	width: calc(100% - 60px);
+	height: 100%;
+	right: 0;
+}
+
+.team .box .data img {
+	max-width:  100%;
+}
+/* End Team */
